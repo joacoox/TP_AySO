@@ -2,3 +2,25 @@ cd repotp/
 cd TP_AySO/
 ls -l
 history -a
+
+En un momento se me pego la maquina virtual y tuve que salir y entrar y se me fueron todos los comandos pero los fui anotando mientras hacia el tp:
+
+echo “Usuario=$(whoami)” > datos_usuario.txt 
+grep -i "model name" /proc/cpuinfo | head -n1 | cat >> datos_usuario.txt
+
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t: -k7 > lista_ordenada
+
+tcpdump
+man -k traffic
+
+echo -e "Comando para dump de tráfico de red: tcpdump\nComando para realizar la busqueda: man -k traffic" > comando_dump_net
+
+cat <<EOF >> README.md
+Alumno: Dominguez Joaquin
+División: 114
+Turno: mañana
+EOF
+
+history -a
+echo $HOME/.bash_history
+cp ~/.bash_history Historial_comandos_Dominguez_Joaquin.txt
