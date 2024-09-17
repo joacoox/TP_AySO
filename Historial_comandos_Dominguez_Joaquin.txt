@@ -1,0 +1,4 @@
+cd repotp/
+cd TP_AySO/
+ls -l
+history -a
